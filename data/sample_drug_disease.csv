@@ -1,0 +1,52 @@
+drug_id,drug_name,disease_id,disease_name,label
+DB00001,Lepirudin,DOID:2349,Arteriosclerosis,1
+DB00001,Lepirudin,DOID:9352,Type 2 diabetes mellitus,0
+DB00002,Cetuximab,DOID:1612,Breast cancer,1
+DB00002,Cetuximab,DOID:9256,Colorectal cancer,1
+DB00003,Dornase alfa,DOID:1485,Cystic fibrosis,1
+DB00003,Dornase alfa,DOID:3083,Chronic obstructive pulmonary disease,1
+DB00004,Denileukin diftitox,DOID:0060500,Cutaneous T-cell lymphoma,1
+DB00004,Denileukin diftitox,DOID:0050745,Diffuse large B-cell lymphoma,0
+DB00005,Etanercept,DOID:7148,Rheumatoid arthritis,1
+DB00005,Etanercept,DOID:8893,Psoriasis,1
+DB00005,Etanercept,DOID:332,Multiple sclerosis,0
+DB00006,Bivalirudin,DOID:2349,Arteriosclerosis,1
+DB00006,Bivalirudin,DOID:9471,Myocardial infarction,1
+DB00007,Leuprolide,DOID:10283,Prostate cancer,1
+DB00007,Leuprolide,DOID:1612,Breast cancer,1
+DB00007,Leuprolide,DOID:11612,Polycystic ovary syndrome,0
+DB00008,Peginterferon alfa-2a,DOID:2237,Hepatitis C,1
+DB00008,Peginterferon alfa-2a,DOID:2043,Hepatitis B,1
+DB00009,Alteplase,DOID:9471,Myocardial infarction,1
+DB00009,Alteplase,DOID:3526,Pulmonary embolism,1
+DB00009,Alteplase,DOID:6713,Stroke,1
+DB00010,Sermorelin,DOID:0080169,Growth hormone deficiency,1
+DB00011,Interferon alfa-n1,DOID:2237,Hepatitis C,1
+DB00011,Interferon alfa-n1,DOID:934,Viral disease,1
+DB00012,Darbepoetin alfa,DOID:2355,Anemia,1
+DB00012,Darbepoetin alfa,DOID:3620,Chronic kidney disease,1
+DB00013,Urokinase,DOID:3526,Pulmonary embolism,1
+DB00014,Goserelin,DOID:10283,Prostate cancer,1
+DB00014,Goserelin,DOID:1612,Breast cancer,1
+DB00014,Goserelin,DOID:289,Endometriosis,1
+DB00015,Reteplase,DOID:9471,Myocardial infarction,1
+DB00016,Erythropoietin,DOID:2355,Anemia,1
+DB00016,Erythropoietin,DOID:3620,Chronic kidney disease,1
+DB00017,Salmon calcitonin,DOID:11476,Osteoporosis,1
+DB00017,Salmon calcitonin,DOID:14221,Paget disease of bone,1
+DB00018,Interferon alfa-n3,DOID:11960,Condyloma acuminatum,1
+DB00019,Pegfilgrastim,DOID:9952,Neutropenia,1
+DB00020,Sargramostim,DOID:9952,Neutropenia,1
+DB00020,Sargramostim,DOID:8552,Aplastic anemia,0
+DB00021,Abciximab,DOID:9471,Myocardial infarction,1
+DB00021,Abciximab,DOID:3393,Coronary artery disease,1
+DB00022,Peginterferon alfa-2b,DOID:2237,Hepatitis C,1
+DB00022,Peginterferon alfa-2b,DOID:1909,Melanoma,1
+DB00023,Tenecteplase,DOID:9471,Myocardial infarction,1
+DB00024,Thyrotropin alfa,DOID:3963,Thyroid carcinoma,1
+DB00025,Antihemophilic factor,DOID:12134,Hemophilia A,1
+DB00026,Anakinra,DOID:7148,Rheumatoid arthritis,1
+DB00027,Gramicidin D,DOID:11252,Bacterial disease,1
+DB00028,Interferon beta-1b,DOID:332,Multiple sclerosis,1
+DB00029,Anistreplase,DOID:9471,Myocardial infarction,1
+DB00030,Interferon beta-1a,DOID:332,Multiple sclerosis,1

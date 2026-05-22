@@ -1,0 +1,17 @@
+{
+  "algorithm": "node2vec",
+  "embedding_dim": 128,
+  "epochs": 100,
+  "learning_rate": 0.01,
+  "random_seed": 42,
+  "walk_length": 80,
+  "num_walks": 10,
+  "p": 1.0,
+  "q": 1.0,
+  "window_size": 5,
+  "num_nodes": 63,
+  "num_walks_generated": 440,
+  "training_time_seconds": 1075.4139790534973,
+  "final_train_loss": 0.3263480339520043,
+  "final_val_loss": 1.0806314090631566
+}

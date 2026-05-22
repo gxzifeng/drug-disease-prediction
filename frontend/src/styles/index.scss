@@ -1,0 +1,286 @@
+// Global styles
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  // Primary palette - Deep teal & coral accents
+  --primary-color: #0d7377;
+  --primary-light: #14a3a8;
+  --primary-dark: #095456;
+  --accent-color: #ff6b6b;
+  --accent-light: #ff8787;
+  
+  // Background gradients
+  --bg-gradient: linear-gradient(135deg, #0c0c1e 0%, #1a1a3e 50%, #0d2137 100%);
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
+  
+  // Text colors
+  --text-primary: #e8eaed;
+  --text-secondary: #9aa0a6;
+  --text-muted: #5f6368;
+  
+  // Status colors
+  --success-color: #34d399;
+  --warning-color: #fbbf24;
+  --error-color: #f87171;
+  --info-color: #60a5fa;
+  
+  // Layout
+  --sidebar-width: 240px;
+  --header-height: 60px;
+  --border-radius: 12px;
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
+
+// Element Plus overrides for dark theme
+.el-menu {
+  background-color: transparent !important;
+  border-right: none !important;
+}
+
+.el-menu-item, .el-sub-menu__title {
+  color: var(--text-secondary) !important;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: var(--text-primary) !important;
+  }
+  
+  &.is-active {
+    color: var(--primary-light) !important;
+    background: linear-gradient(90deg, rgba(13, 115, 119, 0.2), transparent) !important;
+    border-right: 3px solid var(--primary-light);
+  }
+}
+
+.el-card {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
+  border-radius: var(--border-radius) !important;
+  backdrop-filter: blur(10px);
+  
+  .el-card__header {
+    border-bottom: 1px solid var(--card-border) !important;
+    color: var(--text-primary);
+  }
+  
+  .el-card__body {
+    color: var(--text-secondary);
+  }
+}
+
+.el-button--primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light)) !important;
+  border: none !important;
+  
+  &:hover {
+    background: linear-gradient(135deg, var(--primary-light), var(--primary-color)) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(13, 115, 119, 0.4);
+  }
+}
+
+.el-table {
+  background-color: transparent !important;
+  
+  tr, th.el-table__cell {
+    background-color: transparent !important;
+    color: var(--text-primary) !important;
+  }
+  
+  td.el-table__cell {
+    border-bottom: 1px solid var(--card-border) !important;
+  }
+  
+  .el-table__row:hover > td.el-table__cell {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+  }
+}
+
+.el-input__wrapper {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid var(--card-border) !important;
+  box-shadow: none !important;
+  
+  &:hover, &.is-focus {
+    border-color: var(--primary-light) !important;
+  }
+  
+  .el-input__inner {
+    color: var(--text-primary) !important;
+    
+    &::placeholder {
+      color: var(--text-muted) !important;
+    }
+  }
+}
+
+.el-breadcrumb__inner {
+  color: var(--text-secondary) !important;
+  
+  &.is-link:hover {
+    color: var(--primary-light) !important;
+  }
+}
+
+// Animation keyframes
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+// Utility classes
+.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.glass-effect {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--border-radius);
+}
+// ========== 强制浅色模式 + 大字体（用于论文截图） ==========
+// 覆盖所有背景和文字颜色
+*,
+*::before,
+*::after {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #dcdfe6 !important;
+}
+
+// 特殊组件需要保持透明背景的，单独处理
+.el-popper,
+.el-dropdown-menu,
+.el-select-dropdown {
+  background-color: #ffffff !important;
+  border: 1px solid #e4e7ed !important;
+}
+
+// 输入框背景
+.el-input__inner,
+.el-textarea__inner,
+.el-select .el-input__inner {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+// 表格
+.el-table,
+.el-table__body,
+.el-table__row,
+.el-table__header {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.el-table th,
+.el-table td {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+// 卡片、容器
+.el-card,
+.el-main,
+.el-container,
+.el-dialog,
+.el-menu {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+// 字体调大
+html,
+body,
+#app,
+.el-table,
+.el-card,
+.el-form,
+.el-dialog {
+  font-size: 16px !important;
+}
+
+.el-table th,
+.el-table td,
+.el-button,
+.el-input__inner,
+.el-form-item__label {
+  font-size: 14px !important;
+}
+
+// 如果使用了 Element Plus 暗黑模式类，移除深色背景
+html.dark,
+body.dark {
+  background: #ffffff !important;
+}

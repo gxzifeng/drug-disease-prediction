@@ -1,0 +1,14 @@
+{
+  "algorithm": "gcn",
+  "embedding_dim": 128,
+  "epochs": 21,
+  "max_epochs": 100,
+  "learning_rate": 0.001,
+  "random_seed": 42,
+  "hidden_channels": 64,
+  "num_layers": 2,
+  "dropout": 0.5,
+  "num_nodes": 2880,
+  "input_dim": 128,
+  "training_time_seconds": 6.242496013641357,
+  "final_train_loss": 
